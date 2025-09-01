@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Menu de navegação */
+nav {
+    background-color: #007BFF;
+    padding: 10px 0;
+}
+
+nav .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav .menu li {
+    margin: 0 20px;
+}
+
+nav .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .menu a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Lista do portfólio */
+.portfolio-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.portfolio-list li {
+    margin: 10px 0;
+}
+
+.portfolio-list a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.portfolio-list a:hover {
+    text-decoration: underline;
+}
+
+/* Formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Responsividade */
+@media(max-width: 600px){
+    nav .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav .menu li {
+        margin: 10px 0;
+    }
+}
